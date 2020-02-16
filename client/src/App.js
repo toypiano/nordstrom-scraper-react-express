@@ -45,7 +45,7 @@ function App() {
   return (
     <div className="container mt-3">
       <form onSubmit={handleSubmit} className="form-group">
-        <label for="amount">Amount</label>
+        <label htmlFor="amount">Amount</label>
         <input
           id="amount"
           className="form-control mb-3 mr-3"
@@ -53,7 +53,7 @@ function App() {
           value={numResults}
           onChange={e => setNumResults(e.target.value)}
         />
-        <label for="keyword">Search</label>
+        <label htmlFor="keyword">Search</label>
         <input
           id="keyword"
           className="form-control mb-3"
