@@ -14,6 +14,11 @@ const request = require("request-promise").defaults({
   }
 });
 
+// allow request from any origin
+// set specific domain for production
+const cors = require("cors");
+app.use(cors());
+
 app.listen(4000, () => {
   console.log("Sever running on port 4000");
 });
